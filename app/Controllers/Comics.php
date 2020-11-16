@@ -14,10 +14,10 @@ class Comics extends BaseController
 
    public function index()
    {
-      $comic = $this->comicModel->findAll();
+      // $comic = $this->comicModel->findAll();
       $data = [
          'title' => 'List of Comics',
-         'comic' => $comic
+         'comic' => $this->comicModel->getComic()
       ];
 
       // cara konek db tanpa model
@@ -32,4 +32,15 @@ class Comics extends BaseController
 
       return view('comics/index', $data);
    }
+
+   public function detail($slug)
+   {
+      $data = [
+         'title' => 'Detail Comics',
+         'comic' => $this->comicModel->getComic($slug)
+      ];
+      return view('comics/detail', $data);
+   }
+
+   // tutup class
 }

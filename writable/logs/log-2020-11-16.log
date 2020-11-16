@@ -93,3 +93,14 @@ CRITICAL - 2020-11-16 08:00:11 --> Undefined variable: comic
 #7 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
 #9 {main}
+CRITICAL - 2020-11-16 08:21:19 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\ci_4\app\Views\comics\detail.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('comics/detail', Array, true)
+#3 C:\xampp\htdocs\ci_4\app\Controllers\Comics.php(42): view('comics/detail', Array)
+#4 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Comics->detail('naruto.jpg')
+#5 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comics))
+#6 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
