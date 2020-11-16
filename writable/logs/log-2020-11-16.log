@@ -37,3 +37,59 @@ CRITICAL - 2020-11-16 06:26:32 --> Undefined variable: tes
 #7 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
 #9 {main}
+CRITICAL - 2020-11-16 07:12:16 --> Undefined variable: title
+#0 C:\xampp\htdocs\ci_4\app\Views\layout\template.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\View\View.php(257): CodeIgniter\View\View->render('layout/template', Array, true)
+#3 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('comics/index', Array, true)
+#4 C:\xampp\htdocs\ci_4\app\Controllers\Comics.php(13): view('comics/index')
+#5 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Comics->index()
+#6 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comics))
+#7 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2020-11-16 07:59:12 --> Undefined variable: comic
+#0 C:\xampp\htdocs\ci_4\app\Views\comics\index.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('comics/index', Array, true)
+#3 C:\xampp\htdocs\ci_4\app\Controllers\Comics.php(33): view('comics/index', Array)
+#4 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Comics->index()
+#5 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comics))
+#6 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-11-16 08:00:07 --> Undefined variable: comic
+#0 C:\xampp\htdocs\ci_4\app\Views\comics\index.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('comics/index', Array, true)
+#3 C:\xampp\htdocs\ci_4\app\Controllers\Comics.php(33): view('comics/index', Array)
+#4 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Comics->index()
+#5 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comics))
+#6 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-11-16 08:00:10 --> Undefined variable: comic
+#0 C:\xampp\htdocs\ci_4\app\Views\comics\index.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('comics/index', Array, true)
+#3 C:\xampp\htdocs\ci_4\app\Controllers\Comics.php(33): view('comics/index', Array)
+#4 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Comics->index()
+#5 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comics))
+#6 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-11-16 08:00:11 --> Undefined variable: comic
+#0 C:\xampp\htdocs\ci_4\app\Views\comics\index.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('comics/index', Array, true)
+#3 C:\xampp\htdocs\ci_4\app\Controllers\Comics.php(33): view('comics/index', Array)
+#4 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Comics->index()
+#5 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comics))
+#6 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
