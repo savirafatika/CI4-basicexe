@@ -31,7 +31,12 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Pages::index');
+
+
+
+
+// ================ CONTOH ========================
 // ketika ada akses yg method request nya "get" atau ketika kita mengetikkan sesuatu di url, alamatnya adalah "/" atau "root" atau url utama, yaitu controller "Home" method "index"
 
 // atau kita bisa membuat routes baru
@@ -43,11 +48,11 @@ $routes->get('/', 'Home::index');
 // });
 
 // namun jika menggunakan routes dibawah method yg digantikan posisinya tidak akan mau dijalankan saat dipanggil di url, nah cara mengatasinya:
-$routes->get('/coba/index', 'Coba::index');
-$routes->get('/coba/about', 'Coba::about');
+// $routes->get('/coba/index', 'Coba::index');
+// $routes->get('/coba/about', 'Coba::about');
 
 // memaksa alamat url dengan apapun untuk meenggantikan posisi method
-$routes->get('/coba/(:any)/(:num)', 'Coba::about/$1/$2');
+// $routes->get('/coba/(:any)/(:num)', 'Coba::about/$1/$2');
 // :any = apapun yg dikettiikan user
 // :num = apapun yg angka
 // :segment = apapun kecuali slice /
@@ -56,8 +61,8 @@ $routes->get('/coba/(:any)/(:num)', 'Coba::about/$1/$2');
 // $1 akan mengambil placeholder yg pertama kali muncul, dari si :any
 
 // setting urlnya seperti ini agar method file users di folder Admin bisa dijalankan
-$routes->get('/users', 'Admin\Users::index');
-
+// $routes->get('/users', 'Admin\Users::index');
+// ================ CONTOH ========================
 /**
  * --------------------------------------------------------------------
  * Additional Routing

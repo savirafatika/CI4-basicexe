@@ -5,3 +5,35 @@ CRITICAL - 2020-11-16 04:58:42 --> Too few arguments to function App\Controllers
 #3 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #4 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
 #5 {main}
+CRITICAL - 2020-11-16 06:03:59 --> Invalid file: home.php
+#0 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+#1 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('home', Array, true)
+#2 C:\xampp\htdocs\ci_4\app\Controllers\Pages.php(9): view('home')
+#3 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Pages->index()
+#4 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2020-11-16 06:23:53 --> Undefined variable: title
+#0 C:\xampp\htdocs\ci_4\app\Views\layout\header.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('layout/header', Array, true)
+#3 C:\xampp\htdocs\ci_4\app\Controllers\Pages.php(22): view('layout/header')
+#4 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Pages->about()
+#5 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#6 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-11-16 06:26:32 --> Undefined variable: tes
+#0 C:\xampp\htdocs\ci_4\app\Views\pages\home.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('pages/home', Array, true)
+#3 C:\xampp\htdocs\ci_4\app\Controllers\Pages.php(14): view('pages/home')
+#4 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Pages->index()
+#5 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#6 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
