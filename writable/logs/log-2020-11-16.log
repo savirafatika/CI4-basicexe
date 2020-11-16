@@ -1,0 +1,7 @@
+CRITICAL - 2020-11-16 04:58:42 --> Too few arguments to function App\Controllers\Coba::about(), 0 passed in C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php on line 918 and exactly 1 expected
+#0 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Coba->about()
+#1 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Coba))
+#2 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
