@@ -39,7 +39,37 @@ class Comics extends BaseController
          'title' => 'Detail Comics',
          'comic' => $this->comicModel->getComic($slug)
       ];
+
+      // jika komik tidak ada di tabel
+      if (empty($data['comic'])) {
+         throw new \CodeIgniter\Exceptions\PageNotFoundException('Comic Title ' . $slug . 'is Not Found.');
+      }
+
       return view('comics/detail', $data);
+   }
+
+   public function create()
+   {
+      $data = [
+         'title' => 'Add Comic'
+      ];
+      return view('comics/create', $data);
+   }
+
+   public function save()
+   {
+      $slug = url_title($this->request->getVar('title'), '-', true);
+      $this->comicModel->save([
+         'title' => $this->request->getvar('title'),
+         'slug' => $slug,
+         'author' => $this->request->getvar('author'),
+         'publisher' => $this->request->getvar('publisher'),
+         'cover' => $this->request->getvar('cover')
+      ]);
+
+      session()->setFlashdata('message', 'New comics have been Added!');
+
+      return redirect()->to('/comics');
    }
 
    // tutup class

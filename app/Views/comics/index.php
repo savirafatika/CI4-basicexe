@@ -6,6 +6,12 @@
       <div class="col">
 
          <h1 class="mt-2">List of Comic</h1>
+         <a href="/comics/create" class="btn btn-primary mb-3">Add New Comic</a>
+         <?php if (session()->getFlashdata('message')) : ?>
+            <div class="alert alert-success" role="alert">
+               <?= session()->getFlashdata('message'); ?>
+            </div>
+         <?php endif; ?>
          <table class="table table-striped">
             <thead>
                <tr>
