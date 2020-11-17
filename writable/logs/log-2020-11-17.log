@@ -132,3 +132,14 @@ CRITICAL - 2020-11-17 02:02:31 --> Trying to access array offset on value of typ
 #4 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #5 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
 #6 {main}
+CRITICAL - 2020-11-17 03:59:01 --> Class 'App\Database\Seeds\OrangSeeder' not found
+#0 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(124): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#1 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CLI\Commands.php(100): CodeIgniter\Commands\Database\Seed->run(Array)
+#2 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(107): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#3 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(85): CodeIgniter\CLI\CommandRunner->index(Array)
+#4 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(914): CodeIgniter\CLI\CommandRunner->_remap('index', 'db:seed', 'OrangSeeder')
+#5 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#6 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CLI\Console.php(86): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci_4\spark(57): CodeIgniter\CLI\Console->run()
+#9 {main}
