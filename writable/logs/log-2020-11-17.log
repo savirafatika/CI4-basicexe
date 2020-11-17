@@ -30,3 +30,105 @@ CRITICAL - 2020-11-17 00:45:57 --> Call to undefined method CodeIgniter\Validati
 #6 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #7 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
 #8 {main}
+CRITICAL - 2020-11-17 01:42:02 --> syntax error, unexpected ';', expecting ']'
+#0 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-11-17 01:43:05 --> requied is not a valid rule.
+#0 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Validation\Validation.php(333): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('requied')
+#1 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('title', 'title', 'Doraemon Versio...', Array, Array)
+#2 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Controller.php(219): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\ci_4\app\Controllers\Comics.php(134): CodeIgniter\Controller->validate(Array)
+#4 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Comics->update('3')
+#5 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comics))
+#6 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-11-17 01:49:00 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\ci_4\app\Controllers\Comics.php(116): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 116, Array)
+#1 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Comics->update('3')
+#2 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comics))
+#3 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2020-11-17 01:49:36 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\ci_4\app\Controllers\Comics.php(116): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 116, Array)
+#1 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Comics->update('3')
+#2 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comics))
+#3 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2020-11-17 01:54:45 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\ci_4\app\Controllers\Comics.php(116): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 116, Array)
+#1 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Comics->update('3')
+#2 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comics))
+#3 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2020-11-17 01:58:09 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\ci_4\app\Controllers\Comics.php(116): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 116, Array)
+#1 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Comics->update('3')
+#2 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comics))
+#3 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2020-11-17 01:58:29 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\ci_4\app\Controllers\Comics.php(116): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 116, Array)
+#1 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Comics->update('3')
+#2 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comics))
+#3 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2020-11-17 02:00:57 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\ci_4\app\Controllers\Comics.php(116): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 116, Array)
+#1 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Comics->update('3')
+#2 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comics))
+#3 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2020-11-17 02:01:47 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\ci_4\app\Controllers\Comics.php(116): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 116, Array)
+#1 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Comics->update('3')
+#2 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comics))
+#3 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2020-11-17 02:02:11 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\ci_4\app\Controllers\Comics.php(116): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 116, Array)
+#1 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Comics->update('3')
+#2 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comics))
+#3 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2020-11-17 02:02:22 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\ci_4\app\Controllers\Comics.php(116): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 116, Array)
+#1 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Comics->update('3')
+#2 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comics))
+#3 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2020-11-17 02:02:31 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\ci_4\app\Controllers\Comics.php(116): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 116, Array)
+#1 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Comics->update('3')
+#2 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comics))
+#3 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci_4\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\ci_4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}

@@ -70,9 +70,9 @@ class Comics extends BaseController
                'is_unique' => '{field} comic titles are already registered.'
             ]
          ],
-         'author' => 'required|is_unique[comic.author]',
-         'publisher' => 'required|is_unique[comic.publisher]',
-         'cover' => 'required|is_unique[comic.cover]'
+         'author' => 'required',
+         'publisher' => 'required',
+         'cover' => 'required'
       ])) {
          $validation = \Config\Services::validation();
          return redirect()->to('/comics/create')->withInput()->with('validation', $validation);
@@ -88,6 +88,66 @@ class Comics extends BaseController
       ]);
 
       session()->setFlashdata('message', 'New comics have been Added!');
+
+      return redirect()->to('/comics');
+   }
+
+   public function delete($id)
+   {
+      $this->comicModel->delete($id);
+      session()->setFlashdata('message', 'Comic have been Deleted!');
+      return redirect()->to('/comics');
+   }
+
+   public function edit($slug)
+   {
+      $data = [
+         'title' => 'Edit Comic',
+         'validation' => \Config\Services::validation(),
+         'comic' => $this->comicModel->getComic($slug)
+      ];
+      return view('comics/edit', $data);
+   }
+
+   public function update($id)
+   {
+      // cek judul
+      $komikLama = $this->comicModel->getComic($this->request->getVar('slug'));
+      if ($komikLama['title'] == $this->request->getVar('title')) {
+         $rule_title = 'required';
+      } else {
+         $rule_title = 'required|is_unique[comic.title]';
+      }
+
+      // validasi input
+      if (!$this->validate([
+         // 'title' => 'required|is_unique[comic.title]'
+         'title' => [
+            'rules' => $rule_title,
+            'errors' => [
+               'required' => '{field} comic title is required.',
+               'is_unique' => '{field} comic titles are already registered.'
+            ]
+         ],
+         'author' => 'required',
+         'publisher' => 'required',
+         'cover' => 'required'
+      ])) {
+         $validation = \Config\Services::validation();
+         return redirect()->to('/comics/edit/' . $this->request->getVar('slug'))->withInput()->with('validation', $validation);
+      }
+
+      $slug = url_title($this->request->getVar('title'), '-', true);
+      $this->comicModel->save([
+         'id' => $id,
+         'title' => $this->request->getvar('title'),
+         'slug' => $slug,
+         'author' => $this->request->getvar('author'),
+         'publisher' => $this->request->getvar('publisher'),
+         'cover' => $this->request->getvar('cover')
+      ]);
+
+      session()->setFlashdata('message', 'Comic have been Changed!');
 
       return redirect()->to('/comics');
    }
