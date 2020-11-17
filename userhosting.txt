@@ -1,3 +1,0 @@
-MySQL Database: u952450156_ci4
-MySQL User: u952450156_ci4
-pass: ci4_Savira
