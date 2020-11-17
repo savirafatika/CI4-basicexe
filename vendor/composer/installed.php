@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'b8f752d7ff2d2f2e47e5b0cd70a0b47f4b3ce39b',
+    'reference' => '82784a36918e0ddf06cb3ec4921e9a84d139e1ab',
     'name' => 'codeigniter4/appstarter',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'b8f752d7ff2d2f2e47e5b0cd70a0b47f4b3ce39b',
+      'reference' => '82784a36918e0ddf06cb3ec4921e9a84d139e1ab',
     ),
     'codeigniter4/framework' => 
     array (
@@ -95,6 +95,15 @@
       array (
         0 => '1.10.2',
       ),
+    ),
+    'myth/auth' => 
+    array (
+      'pretty_version' => '1.0-beta.3',
+      'version' => '1.0.0.0-beta3',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '85572d1f1bb312d7d2e0a444b45531170773d2de',
     ),
     'phar-io/manifest' => 
     array (

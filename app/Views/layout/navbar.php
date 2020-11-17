@@ -13,6 +13,11 @@
             <a class="nav-link" href="/comics">Comic</a>
             <a class="nav-link" href="/peoples">People</a>
          </div>
+         <?php if (logged_in()) : ?>
+            <a class="nav-link" href="/logout" style="color: white;">Logout</a>
+         <?php else : ?>
+            <a class="nav-link" href="/login" style="color: white;">Login</a>
+         <?php endif; ?>
       </div>
    </div>
 </nav>
