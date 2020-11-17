@@ -50,14 +50,34 @@ class Comics extends BaseController
 
    public function create()
    {
+      // session();
       $data = [
-         'title' => 'Add Comic'
+         'title' => 'Add Comic',
+         'validation' => \Config\Services::validation()
       ];
       return view('comics/create', $data);
    }
 
    public function save()
    {
+      // validasi input
+      if (!$this->validate([
+         // 'title' => 'required|is_unique[comic.title]'
+         'title' => [
+            'rules' => 'required|is_unique[comic.title]',
+            'errors' => [
+               'required' => '{field} comic title is required.',
+               'is_unique' => '{field} comic titles are already registered.'
+            ]
+         ],
+         'author' => 'required|is_unique[comic.author]',
+         'publisher' => 'required|is_unique[comic.publisher]',
+         'cover' => 'required|is_unique[comic.cover]'
+      ])) {
+         $validation = \Config\Services::validation();
+         return redirect()->to('/comics/create')->withInput()->with('validation', $validation);
+      }
+
       $slug = url_title($this->request->getVar('title'), '-', true);
       $this->comicModel->save([
          'title' => $this->request->getvar('title'),
